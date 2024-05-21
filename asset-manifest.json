@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/youtaekyoung/ey/static/css/main.cebf82e5.css",
+    "main.js": "/youtaekyoung/ey/static/js/main.2927d834.js",
+    "static/js/453.022ec501.chunk.js": "/youtaekyoung/ey/static/js/453.022ec501.chunk.js",
+    "index.html": "/youtaekyoung/ey/index.html",
+    "main.cebf82e5.css.map": "/youtaekyoung/ey/static/css/main.cebf82e5.css.map",
+    "main.2927d834.js.map": "/youtaekyoung/ey/static/js/main.2927d834.js.map",
+    "453.022ec501.chunk.js.map": "/youtaekyoung/ey/static/js/453.022ec501.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cebf82e5.css",
+    "static/js/main.2927d834.js"
+  ]
+}
