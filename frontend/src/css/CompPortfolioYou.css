@@ -1,0 +1,54 @@
+.portfolio-y {
+  position: relative;
+  height: 84vh;
+}
+.portfolio-y .portfolio-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 85%;
+  margin: 0 auto;
+  border-radius: 5px 0 0 5px;
+  box-shadow: 4px 4px 2px #AAA;
+  overflow-x: hidden;
+}
+.portfolio-y .portfolio-img .img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40%;
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px #BBB, -2px -2px 2px white;
+  box-sizing: border-box;
+}
+.portfolio-y .portfolio-img .img > img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+.portfolio-y .portfolio-img .img > figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.portfolio-y .showPortfolio {
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  width: 20%;
+  height: 10%;
+  border-radius: 0;
+  transform: translate(-50%, 0);
+  border: 1px solid black;
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px #BBB, -2px -2px 2px white;
+  cursor: pointer;
+}
+.portfolio-y .showPortfolio:hover {
+  box-shadow: -2px -2px 2px #BBB, 2px 2px 2px white;
+}/*# sourceMappingURL=CompPortfolioYou.css.map */

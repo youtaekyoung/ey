@@ -1,0 +1,38 @@
+.portpolio-j{
+    width: 80%;
+    height: 84vh;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 30px;
+    >h2{
+        text-align: center;
+    }
+    >div{
+        padding-top: 50px;
+        .plusBtn{
+            width: 30%;
+            height: 30px;
+            background-color: lightsalmon;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 30px;
+            margin:0 auto;
+        }
+        .plusBtn:hover{
+            cursor: pointer;
+        }
+        >p{
+            font-size: 10px;
+            text-align: right;
+        }
+        .imageZone{
+            margin-bottom: 50px;
+            >img{
+                height: 150px;
+                margin-right: 30px;
+                border: 1px solid #ccc;
+            }
+        }
+    }
+    
+}

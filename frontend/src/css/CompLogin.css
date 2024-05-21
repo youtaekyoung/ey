@@ -1,0 +1,138 @@
+.Member_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 84vh;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.Member_main .Member_box {
+  position: relative;
+  width: 80%;
+  height: 80%;
+}
+.Member_main .Member_box > h3 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+.Member_main .Member_box .Member_id {
+  display: flex;
+  margin: 20px 0;
+}
+.Member_main .Member_box .Member_id > span {
+  width: 15%;
+  margin-left: 100px;
+}
+.Member_main .Member_box .Member_id > input {
+  width: 50%;
+  margin-right: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.Member_main .Member_box .Member_id > button {
+  width: 10%;
+  padding: 4px;
+  box-sizing: border-box;
+}
+.Member_main .Member_box .Member_pw {
+  display: flex;
+  margin: 20px 0;
+}
+.Member_main .Member_box .Member_pw > span {
+  width: 15%;
+  margin-left: 100px;
+}
+.Member_main .Member_box .Member_pw > input {
+  width: calc(60% + 10px);
+  padding: 5px;
+  box-sizing: border-box;
+}
+.Member_main .Member_box .port_se {
+  display: flex;
+  margin: 20px 0;
+}
+.Member_main .Member_box .port_se > span {
+  width: 50%;
+  margin-left: 100px;
+}
+.Member_main .Member_box .port_se > select {
+  width: calc(25% + 10px);
+  padding: 5px;
+}
+.Member_main .Member_box .Member_btn {
+  position: absolute;
+  bottom: 200px;
+  width: calc(80% - 20px);
+  padding: 5px;
+  margin-left: 90px;
+}
+
+.Login_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 84vh;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.Login_main .Login_box {
+  position: relative;
+  width: 80%;
+  height: 80%;
+}
+.Login_main .Login_box > h3 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+.Login_main .Login_box .Login_id {
+  display: flex;
+  margin: 20px 0;
+}
+.Login_main .Login_box .Login_id > span {
+  width: 15%;
+  margin-left: 100px;
+}
+.Login_main .Login_box .Login_id > input {
+  width: calc(60% + 10px);
+  margin-right: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.Login_main .Login_box .Login_pw {
+  position: relative;
+  display: flex;
+  margin: 20px 0;
+}
+.Login_main .Login_box .Login_pw > span {
+  width: 15%;
+  margin-left: 100px;
+}
+.Login_main .Login_box .Login_pw > input {
+  width: calc(60% + 10px);
+  padding: 5px;
+  box-sizing: border-box;
+}
+.Login_main .Login_box .Login_pw > svg {
+  position: absolute;
+  top: 50%;
+  right: calc(25% - 100px);
+  transform: translate(0, -50%);
+}
+.Login_main .Login_box .Login_btn {
+  position: absolute;
+  bottom: 250px;
+  width: calc(80% - 20px);
+  padding: 5px;
+  margin-left: 90px;
+}
+.Login_main .Login_box .Member_btn {
+  position: absolute;
+  bottom: 200px;
+  width: calc(80% - 20px);
+  padding: 5px;
+  margin-left: 90px;
+}/*# sourceMappingURL=CompLogin.css.map */

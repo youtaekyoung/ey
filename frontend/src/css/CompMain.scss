@@ -1,0 +1,128 @@
+.Main-h {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  height: 54vh;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 30px 100px;
+  .board-d {
+    width: 45%;
+    height: 100%;
+    border-radius: 3%;
+    border: 1px solid darkgreen;
+    >h2{
+      height: 20%;
+      text-align: center;
+    }
+    .board-d-h{
+      height: 30%;
+      .Dpost{
+        cursor: pointer;
+        &:hover{
+          .Text{
+            text-decoration: underline;
+          }
+        }
+      }
+      >p{
+        height: 33.33%;
+      }
+    }
+    .board-d-c{
+      height: 50%;
+      .Dpost{
+        cursor: pointer;
+        &:hover{
+          .Text{
+            text-decoration: underline;
+          }
+        }
+      }
+      >p{
+        height: 20%;
+      }
+    }
+  }
+  .board-f {
+    width: 45%;
+    height: 100%;
+    border-radius: 3%;
+    border: 1px solid darkgreen;
+    >h2{
+      height: 20%;
+      text-align: center;
+    }
+    .board-f-h{
+      height: 30%;
+      .Fpost{
+        cursor: pointer;
+        &:hover{
+          .Text{
+            text-decoration: underline;
+          }
+        }
+      }
+      >p{
+        height: 33.33%;
+
+      }
+    }
+    .board-f-c{
+      height: 50%;
+      .Fpost{
+        cursor: pointer;
+        &:hover{
+          .Text{
+            text-decoration: underline;
+          }
+        }
+      }
+      >p{
+        height: 20%;
+      }
+    }
+  }
+}
+.Main-b {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  height: 30vh;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 30px 150px;
+  .card-e {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 10px;
+    width: 30%;
+    border: 1px solid rgba(red, 0.7);
+    border-radius: 10px;
+    >p:nth-child(2),:nth-child(3){
+      text-align: right;
+    }
+  }
+  .card-y {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("https://cdn.crowdpic.net/detail-thumb/thumb_d_890DBD02B77089547C0E506DD35A3788.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 20px;
+    width: 28%;
+    border: 1px solid rgba(#ccc, 0.7);
+    border-radius: 10px;
+    text-align: right;
+    >p:nth-child(2){
+      font-size: 10px;
+    }
+    >p:nth-child(3):hover,:nth-child(4):hover{
+      cursor: pointer;
+    }
+  }
+}

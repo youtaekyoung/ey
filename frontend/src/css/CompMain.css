@@ -1,0 +1,120 @@
+.Main-h {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  height: 54vh;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 30px 100px;
+}
+.Main-h .board-d {
+  width: 45%;
+  height: 100%;
+  border-radius: 3%;
+  border: 1px solid darkgreen;
+}
+.Main-h .board-d > h2 {
+  height: 20%;
+  text-align: center;
+}
+.Main-h .board-d .board-d-h {
+  height: 30%;
+}
+.Main-h .board-d .board-d-h .Dpost {
+  cursor: pointer;
+}
+.Main-h .board-d .board-d-h .Dpost:hover .Text {
+  text-decoration: underline;
+}
+.Main-h .board-d .board-d-h > p {
+  height: 33.33%;
+}
+.Main-h .board-d .board-d-c {
+  height: 50%;
+}
+.Main-h .board-d .board-d-c .Dpost {
+  cursor: pointer;
+}
+.Main-h .board-d .board-d-c .Dpost:hover .Text {
+  text-decoration: underline;
+}
+.Main-h .board-d .board-d-c > p {
+  height: 20%;
+}
+.Main-h .board-f {
+  width: 45%;
+  height: 100%;
+  border-radius: 3%;
+  border: 1px solid darkgreen;
+}
+.Main-h .board-f > h2 {
+  height: 20%;
+  text-align: center;
+}
+.Main-h .board-f .board-f-h {
+  height: 30%;
+}
+.Main-h .board-f .board-f-h .Fpost {
+  cursor: pointer;
+}
+.Main-h .board-f .board-f-h .Fpost:hover .Text {
+  text-decoration: underline;
+}
+.Main-h .board-f .board-f-h > p {
+  height: 33.33%;
+}
+.Main-h .board-f .board-f-c {
+  height: 50%;
+}
+.Main-h .board-f .board-f-c .Fpost {
+  cursor: pointer;
+}
+.Main-h .board-f .board-f-c .Fpost:hover .Text {
+  text-decoration: underline;
+}
+.Main-h .board-f .board-f-c > p {
+  height: 20%;
+}
+
+.Main-b {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  height: 30vh;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 30px 150px;
+}
+.Main-b .card-e {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 10px;
+  width: 30%;
+  border: 1px solid rgba(255, 0, 0, 0.7);
+  border-radius: 10px;
+}
+.Main-b .card-e > p:nth-child(2), .Main-b .card-e :nth-child(3) {
+  text-align: right;
+}
+.Main-b .card-y {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("https://cdn.crowdpic.net/detail-thumb/thumb_d_890DBD02B77089547C0E506DD35A3788.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 20px;
+  width: 28%;
+  border: 1px solid rgba(204, 204, 204, 0.7);
+  border-radius: 10px;
+  text-align: right;
+}
+.Main-b .card-y > p:nth-child(2) {
+  font-size: 10px;
+}
+.Main-b .card-y > p:nth-child(3):hover, .Main-b .card-y :nth-child(4):hover {
+  cursor: pointer;
+}/*# sourceMappingURL=CompMain.css.map */
