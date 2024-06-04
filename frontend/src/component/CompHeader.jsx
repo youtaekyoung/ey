@@ -21,7 +21,6 @@ const CompHeader = () => {
   }
 
   useEffect(() => {
-    console.log(location.pathname)
     if (location.pathname === '/') {
       document.querySelectorAll('.nav > li > a').forEach(v => { v.classList.remove('active') })
       document.querySelector('.Board_main >span').classList.remove('active')

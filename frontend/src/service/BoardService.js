@@ -1,9 +1,9 @@
 import axios from "axios";
 
-const USER_API_BASE_URL = 'http://183.101.134.54:8073/api/v1';
-//const USER_API_BASE_URL = 'http://14.54.176.241:8073/api/v1';
+//const USER_API_BASE_URL = 'https://183.101.134.54:8073/api/v1';
+//const USER_API_BASE_URL = 'https://14.54.176.241:8073/api/v1';
 
-//const USER_API_BASE_URL = 'http://localhost:8073/api/v1';
+const USER_API_BASE_URL = 'https://a323-183-101-134-54.ngrok-free.app/api/v1';
 
 class BoardService{
     //메인화면에서 보이는 게시판의 경우
@@ -13,12 +13,12 @@ class BoardService{
     /* 메인 게시판 */
     //메인화면 댓글 게시판
     mainReplyBoard(){
-        return axios.get(USER_API_BASE_URL+"/main/board/reply");
+        return axios.get(USER_API_BASE_URL+"/main/board/reply",{headers : {'ngrok-skip-browser-warning':'69420'}});
     }
 
     //메인화면 파일 게시판
     mainFileBoard(){
-        return axios.get(USER_API_BASE_URL+"/main/board/file");
+        return axios.get(USER_API_BASE_URL+"/main/board/file",{headers : {'ngrok-skip-browser-warning':'69420'}});
     }
 
 
@@ -26,7 +26,7 @@ class BoardService{
     //댓글 게시판
     //게시글 전체 조회
     getReplyBoardAll(){
-        return axios.get(USER_API_BASE_URL+"/board/reply");
+        return axios.get(USER_API_BASE_URL+"/board/reply",{headers : {'ngrok-skip-browser-warning':'69420'}});
     }
 
     //게시판 상세 조회
@@ -46,13 +46,13 @@ class BoardService{
     //댓글 좋아요(replyVos.replyLikes)
     //댓글 싫어요(replyVos.replyDislikes)
     getBoardOne(boardSeq,id){
-        return axios.get(USER_API_BASE_URL+"/board/"+boardSeq+"/"+id);
+        return axios.get(USER_API_BASE_URL+"/board/"+boardSeq+"/"+id,{headers : {'ngrok-skip-browser-warning':'69420'}});
     }
 
     //댓글 게시판 글 작성
     //게시글의 제목(title), 내용(content), 작성자(id)를 json으로 보내주세요
     insertReplyBoard(boardVo){
-        return axios.post(USER_API_BASE_URL+"/board/reply",boardVo);
+        return axios.post(USER_API_BASE_URL+"/board/reply",boardVo,{headers : {'ngrok-skip-browser-warning':'69420'}});
     }
 
     /* 댓글 */
@@ -61,26 +61,26 @@ class BoardService{
     //댓글 작성
     //댓글의 내용(content), 작성자(id), 댓글을 작성하는 글의 번호(boardseq)를 json으로 보내주세요
     insertReply(replyVo){
-        return axios.post(USER_API_BASE_URL+"/reply",replyVo);
+        return axios.post(USER_API_BASE_URL+"/reply",replyVo,{headers : {'ngrok-skip-browser-warning':'69420'}});
     }
 
     //답글 작성
     //답글의 내용(content), 작성자(id), 답글을 작성하는 댓글의 번호(replyseq)를 json으로 보내주세요
     insertReplyReply(replyVo){
-        return axios.post(USER_API_BASE_URL+"/replyReply",replyVo);
+        return axios.post(USER_API_BASE_URL+"/replyReply",replyVo,{headers : {'ngrok-skip-browser-warning':'69420'}});
     }
 
     //댓글 삭제
     //삭제하려는 댓글의 번호(replyseq)를 보내주세요
     deleteReply(replySeq){
-        return axios.patch(USER_API_BASE_URL+"/reply/"+replySeq);
+        return axios.patch(USER_API_BASE_URL+"/reply/"+replySeq,{headers : {'ngrok-skip-browser-warning':'69420'}});
     }
 
 
     //파일 게시판
     //게시글 전체 조회
     getFileBoardAll(){
-        return axios.get(USER_API_BASE_URL+"/board/file");
+        return axios.get(USER_API_BASE_URL+"/board/file",{headers : {'ngrok-skip-browser-warning':'69420'}});
     }
 
     //파일 게시판 글 작성
@@ -89,18 +89,18 @@ class BoardService{
     //파일의 경우 최대 16MB입니다
     //form header에 multipart/form-data 담아서 보내주세요
     insertFileBoard(formData){
-        return axios.post(USER_API_BASE_URL+"/board/file",formData);
+        return axios.post(USER_API_BASE_URL+"/board/file",formData,{headers : {'ngrok-skip-browser-warning':'69420'}});
     }
 
     //파일 다운로드
     //파일번호을 담아서 보내주세요
     downloadFile(fileSeq){
-        return axios.get(USER_API_BASE_URL+"/download/"+fileSeq)
+        return axios.get(USER_API_BASE_URL+"/download/"+fileSeq,{headers : {'ngrok-skip-browser-warning':'69420'}})
     }
 
     //게시글 삭제
     deleteboard(boardSeq){
-        return axios.patch(USER_API_BASE_URL+"/board/delete/"+boardSeq);
+        return axios.patch(USER_API_BASE_URL+"/board/delete/"+boardSeq,{headers : {'ngrok-skip-browser-warning':'69420'}});
     }
 
 
@@ -110,36 +110,36 @@ class BoardService{
 
     //게시글 좋아요
     boardLikes(boardSeq, id){
-        return axios.get(USER_API_BASE_URL+"/board/likes/"+boardSeq+"/"+id);
+        return axios.get(USER_API_BASE_URL+"/board/likes/"+boardSeq+"/"+id,{headers : {'ngrok-skip-browser-warning':'69420'}});
     }
     //게시글 좋아요 취소
     cancelBoardLikes(boardSeq, id){
-        return axios.delete(USER_API_BASE_URL+"/board/cancelLikes/"+boardSeq+"/"+id);
+        return axios.delete(USER_API_BASE_URL+"/board/cancelLikes/"+boardSeq+"/"+id,{headers : {'ngrok-skip-browser-warning':'69420'}});
     }
     //게시글 싫어요
     boardDislikes(boardSeq, id){
-        return axios.get(USER_API_BASE_URL+"/board/dislikes/"+boardSeq+"/"+id);
+        return axios.get(USER_API_BASE_URL+"/board/dislikes/"+boardSeq+"/"+id,{headers : {'ngrok-skip-browser-warning':'69420'}});
     }
     //게시글 싫어요 취소
     cancelboardDislikes(boardSeq, id){
-        return axios.delete(USER_API_BASE_URL+"/board/cancelDislikes/"+boardSeq+"/"+id);
+        return axios.delete(USER_API_BASE_URL+"/board/cancelDislikes/"+boardSeq+"/"+id,{headers : {'ngrok-skip-browser-warning':'69420'}});
     }
 
     //댓글 좋아요
     replyLikes(replySeq, id){
-        return axios.get(USER_API_BASE_URL+"/reply/likes/"+replySeq+"/"+id);
+        return axios.get(USER_API_BASE_URL+"/reply/likes/"+replySeq+"/"+id,{headers : {'ngrok-skip-browser-warning':'69420'}});
     }
     //댓글 좋아요 취소
     cancelReplyLikes(replySeq, id){
-        return axios.delete(USER_API_BASE_URL+"/reply/cancelLikes/"+replySeq+"/"+id);
+        return axios.delete(USER_API_BASE_URL+"/reply/cancelLikes/"+replySeq+"/"+id,{headers : {'ngrok-skip-browser-warning':'69420'}});
     }
     //댓글 싫어요
     replyDislikes(replySeq, id){
-        return axios.get(USER_API_BASE_URL+"/reply/dislikes/"+replySeq+"/"+id);
+        return axios.get(USER_API_BASE_URL+"/reply/dislikes/"+replySeq+"/"+id,{headers : {'ngrok-skip-browser-warning':'69420'}});
     }
     //댓글 싫어요 취소
     cancelReplyDislikes(replySeq, id){
-        return axios.delete(USER_API_BASE_URL+"/reply/cancelDislikes/"+replySeq+"/"+id);
+        return axios.delete(USER_API_BASE_URL+"/reply/cancelDislikes/"+replySeq+"/"+id,{headers : {'ngrok-skip-browser-warning':'69420'}});
     }
 }
 

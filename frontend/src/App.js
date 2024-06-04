@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { createContext,  useState } from 'react';
+import { createContext, useState } from 'react';
 import CompFooter from "./component/CompFooter";
 import CompHeader from "./component/CompHeader";
 import CompMain from "./component/CompMain";
@@ -34,17 +34,17 @@ function App() {
   const [_loginId, _setLoginId] = useState(UserId().user.id)
   const [_loginAuth, _setLoginAuth] = useState(UserId().user.auth)
 
-  
+
   return (
     <div className="App">
-      <BrowserRouter>
-        <AppContext.Provider value={{ _isLogin, _setIsLogin, _loginId, _setLoginId , _loginAuth, _setLoginAuth }}>
+      < BrowserRouter>
+        <AppContext.Provider value={{ _isLogin, _setIsLogin, _loginId, _setLoginId, _loginAuth, _setLoginAuth }}>
           <CompHeader></CompHeader>
           <Routes>
             <Route path='/' element={<CompMain />} />
             <Route path='/BoardD' element={<CompBoardD />} />
-            <Route path='/BoardDI' element={<CompBoardDI/>}/>
-            <Route path='/BoardDD' element={<CompBoardDD/>}/>
+            <Route path='/BoardDI' element={<CompBoardDI />} />
+            <Route path='/BoardDD' element={<CompBoardDD />} />
             <Route path='/BoardF' element={<CompBoardF />} />
             <Route path='/BoardFI' element={<CompBoardFI />} />
             <Route path='/BoardFD' element={<CompBoardFD />} />
@@ -55,7 +55,7 @@ function App() {
           </Routes>
         </AppContext.Provider>
         <CompFooter></CompFooter>
-      </BrowserRouter>
+      </ BrowserRouter>
     </div>
   );
 }
